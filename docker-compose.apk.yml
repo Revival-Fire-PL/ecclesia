@@ -1,0 +1,7 @@
+services:
+  apk-builder:
+    build:
+      context: ./mobile
+      dockerfile: Dockerfile.apk
+    volumes:
+      - ./build:/output
